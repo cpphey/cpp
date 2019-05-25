@@ -14,12 +14,18 @@ class Powerset:
         del e, e_cp, p_cp
 
 ####################################################################
-s=[1,2,3,4, 5, 6]
-ps = Powerset()
-for i in s:
-    ps.insert(i)
+def makePowerSet(regularset):
+    global ps
+    for i in regularset:
+        ps.insert(i)
+####################################################################
+def main(s):
+    makePowerSet(s)
 
-print('Powerset')
-print(ps.p)
-print('Expected length of powerset', 2**len(s))
-print('Actual length of powerset',len(ps.p))
+    print('Powerset')
+    print(ps.p)
+    print('Expected length of powerset', 2**len(s))
+    print('Actual length of powerset',len(ps.p))
+
+ps = Powerset()
+#main([1,2,3,4, 5, 6])

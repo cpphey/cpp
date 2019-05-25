@@ -1,4 +1,4 @@
-class Stack:
+class AbhiStack:
 
     data = []
 
@@ -22,7 +22,7 @@ class Stack:
         print('')
 
 def main():
-    s = Stack()
+    s = AbhiStack()
     #s.push(1);s.push(2);s.push(3);s.push(4);s.push(5);s.push(6);s.push(7);
     s.print()
     s.pop()
@@ -30,4 +30,4 @@ def main():
     print("\nMain done")
     pass
 
-main()
+#main()

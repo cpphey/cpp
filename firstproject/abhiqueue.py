@@ -1,6 +1,6 @@
 #from stack import Stack
 
-class Queue:
+class AbhiQueue:
 
     data = []
     def __init__(self):
@@ -22,20 +22,29 @@ class Queue:
             print(d, end='')
         print('')
 
+    def isPresent(self,arg):
+        return arg in self.data
+
+    def __sizeof__(self):
+        return len(self.data)
+
+    def size(self):
+        return self.__sizeof__()
 
 def main():
-    q = Queue()
-    q.enqueue(1)
-    q.enqueue(2)
-    q.enqueue(3)
-    q.print()
+    pass
+    #q = AbhiQueue()
+    #q.enqueue(1)
+    #q.enqueue(2)
+    #q.enqueue(3)
+    #q.print()
 
     #print( q.dequeue() )
-    q.dequeue()
-    q.print()
+    #q.dequeue()
+    #q.print()
 
     #q.enqueue('apple')
-    q.enqueue(4)
-    q.print()
+    #q.enqueue(4)
+    #q.print()
 
-main()
+#main()
