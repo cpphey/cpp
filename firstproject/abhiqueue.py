@@ -31,6 +31,7 @@ class AbhiQueue:
     def size(self):
         return self.__sizeof__()
 
+"""
 def main():
     pass
     #q = AbhiQueue()
@@ -48,3 +49,4 @@ def main():
     #q.print()
 
 #main()
+"""
