@@ -28,12 +28,15 @@ def subsetSum(i,j):
     keyH = makeIndex(i,j)
 
     if keyH in hash:
+        print ('DP advantage in retrieving',keyH)
         return hash[keyH]
 
+    #the following for loop is never used
     tempSum=0
     for ii in range(i,j+1):
         tempSum+=A[ii]
     hash[keyH] = tempSum
+    print('Made', keyH)
     return hash[keyH]
 
 ####################################################
@@ -56,6 +59,7 @@ for currentLength in allLenghtPossible:
         finish = start+currentLength
         print(start,"   ",finish)
         hash[makeIndex(start,finish)] = subsetSum(start,finish-1)+A[finish]
+        print('Putting in hash', makeIndex(start, finish), ':', hash[makeIndex(start, finish)])
 
 
 #TODO go through hash and find the max sum
