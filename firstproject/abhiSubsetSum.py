@@ -50,7 +50,7 @@ numberOfLenghtsPossible = n - 1
 print('numberOfLenghtsPossible ',numberOfLenghtsPossible)
 
 allLenghtPossible=[i+1 for i in range(numberOfLenghtsPossible)]
-print('numberOfLenghtsPossible ',allLenghtPossible)
+print('allLenghtPossible ',allLenghtPossible)
 
 for currentLength in allLenghtPossible:
     print('---------Current Length  ',currentLength,'------------')
