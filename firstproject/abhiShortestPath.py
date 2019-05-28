@@ -68,5 +68,5 @@ while(q.size()):
         if current_cost <= costArray[e]:
             costArray[e] = current_cost
 
-
+print(costArray)
 print("Program done")
