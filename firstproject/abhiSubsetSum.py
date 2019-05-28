@@ -58,7 +58,7 @@ for currentLength in allLenghtPossible:
         #calculating INCLUSIVE start to finish
         finish = start+currentLength
         print(start,"   ",finish)
-        hash[makeIndex(start,finish)] = subsetSum(start,finish-1)+A[finish]
+        hash[makeIndex(start,finish)] = subsetSum(start,finish-1)+A[finish] #dynamic programmming line
         print('Putting in hash', makeIndex(start, finish), ':', hash[makeIndex(start, finish)])
 
 
