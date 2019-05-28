@@ -25,5 +25,8 @@ print(solution([-8,4,0,5,-3,6]))
 inner Loop
 no going from i is right because problem said a node to itself will have distance 0; see below
 it gave an example
-where it went from 0 to 0. element 0
+where it went from 0 to 0. element 0 was 3
+A[0]+A[0]-(0-0)
+3   + 3  -(0-0)
+Answer is 6 and this is the best answer
 """
