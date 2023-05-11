@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cmake4eclipse.mbs.toolchain.cmake.1946212849">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cmake4eclipse.mbs.toolchain.cmake.1946212849" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="" id="cmake4eclipse.mbs.toolchain.cmake.1946212849" name="Default" optionalBuildProperties="" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cmake4eclipse.mbs.toolchain.cmake.1946212849.1649610356" name="/" resourcePath="">
+						<toolChain id="cmake4eclipse.mbs.toolchain.cmake.615412125" name="CMake driven" superClass="cmake4eclipse.mbs.toolchain.cmake">
+							<targetPlatform id="cmake4eclipse.mbs.targetPlatform.cmake.1825420618" name="Any Platform" superClass="cmake4eclipse.mbs.targetPlatform.cmake"/>
+							<builder id="cmake4eclipse.mbs.builder.307638643" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CMake Builder" superClass="cmake4eclipse.mbs.builder"/>
+							<tool id="cmake4eclipse.mbs.toolchain.tool.dummy.476827759" name="CMake" superClass="cmake4eclipse.mbs.toolchain.tool.dummy">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="cmake4eclipse.mbs.option.dummy.1680203208" superClass="cmake4eclipse.mbs.option.dummy" valueType="includePath">
+									<listOptionValue builtIn="false" value="/usr/include/c++/11/"/>
+									<listOptionValue builtIn="false" value="/usr/include/"/>
+								</option>
+								<inputType id="cmake4eclipse.mbs.inputType.c.1490062392" superClass="cmake4eclipse.mbs.inputType.c"/>
+								<inputType id="cmake4eclipse.mbs.inputType.cpp.1958976494" superClass="cmake4eclipse.mbs.inputType.cpp"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule buildDir="build" dirtyTs="1683577802310" moduleId="de.marw.cmake4eclipse.mbs.settings">
+				<options/>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="MayLearning.null.1229081537" name="MayLearning"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cmake4eclipse.mbs.toolchain.cmake.1946212849;cmake4eclipse.mbs.toolchain.cmake.1946212849.1649610356;cmake4eclipse.mbs.toolchain.tool.dummy.476827759;cmake4eclipse.mbs.inputType.c.1490062392">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cmake4eclipse.mbs.toolchain.cmake.1946212849;cmake4eclipse.mbs.toolchain.cmake.1946212849.1649610356;cmake4eclipse.mbs.toolchain.tool.dummy.476827759;cmake4eclipse.mbs.inputType.cpp.1958976494">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

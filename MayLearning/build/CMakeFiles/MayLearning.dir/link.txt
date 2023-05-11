@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/MayLearning.dir/hello.cpp.o -o MayLearning 

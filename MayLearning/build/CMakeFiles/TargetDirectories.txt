@@ -1,0 +1,3 @@
+/home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles/MayLearning.dir
+/home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles/edit_cache.dir
+/home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles/rebuild_cache.dir
