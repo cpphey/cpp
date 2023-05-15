@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/amazon/eclipse-workspace/MayLearning/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MayLearning.dir/all
+all: CMakeFiles/hello.dir/all
+all: CMakeFiles/enum_union.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MayLearning.dir/clean
+clean: CMakeFiles/hello.dir/clean
+clean: CMakeFiles/enum_union.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MayLearning.dir
+# Target rules for target CMakeFiles/hello.dir
 
 # All Build rule for target.
-CMakeFiles/MayLearning.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MayLearning.dir/build.make CMakeFiles/MayLearning.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MayLearning.dir/build.make CMakeFiles/MayLearning.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles --progress-num=1,2 "Built target MayLearning"
-.PHONY : CMakeFiles/MayLearning.dir/all
+CMakeFiles/hello.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles --progress-num=3,4 "Built target hello"
+.PHONY : CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MayLearning.dir/rule: cmake_check_build_system
+CMakeFiles/hello.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MayLearning.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hello.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles 0
-.PHONY : CMakeFiles/MayLearning.dir/rule
+.PHONY : CMakeFiles/hello.dir/rule
 
 # Convenience name for target.
-MayLearning: CMakeFiles/MayLearning.dir/rule
-.PHONY : MayLearning
+hello: CMakeFiles/hello.dir/rule
+.PHONY : hello
 
 # clean rule for target.
-CMakeFiles/MayLearning.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MayLearning.dir/build.make CMakeFiles/MayLearning.dir/clean
-.PHONY : CMakeFiles/MayLearning.dir/clean
+CMakeFiles/hello.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/clean
+.PHONY : CMakeFiles/hello.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/enum_union.dir
+
+# All Build rule for target.
+CMakeFiles/enum_union.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enum_union.dir/build.make CMakeFiles/enum_union.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enum_union.dir/build.make CMakeFiles/enum_union.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles --progress-num=1,2 "Built target enum_union"
+.PHONY : CMakeFiles/enum_union.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/enum_union.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/enum_union.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amazon/eclipse-workspace/MayLearning/build/CMakeFiles 0
+.PHONY : CMakeFiles/enum_union.dir/rule
+
+# Convenience name for target.
+enum_union: CMakeFiles/enum_union.dir/rule
+.PHONY : enum_union
+
+# clean rule for target.
+CMakeFiles/enum_union.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enum_union.dir/build.make CMakeFiles/enum_union.dir/clean
+.PHONY : CMakeFiles/enum_union.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,4 +1,4 @@
-CMakeFiles/MayLearning.dir/hello.cpp.o: \
+CMakeFiles/hello.dir/hello.cpp.o: \
  /home/amazon/eclipse-workspace/MayLearning/hello.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

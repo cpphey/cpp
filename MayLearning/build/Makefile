@@ -117,24 +117,61 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MayLearning
+# Target rules for targets named hello
 
 # Build rule for target.
-MayLearning: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MayLearning
-.PHONY : MayLearning
+hello: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
+.PHONY : hello
 
 # fast build rule for target.
-MayLearning/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MayLearning.dir/build.make CMakeFiles/MayLearning.dir/build
-.PHONY : MayLearning/fast
+hello/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
+.PHONY : hello/fast
+
+#=============================================================================
+# Target rules for targets named enum_union
+
+# Build rule for target.
+enum_union: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 enum_union
+.PHONY : enum_union
+
+# fast build rule for target.
+enum_union/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enum_union.dir/build.make CMakeFiles/enum_union.dir/build
+.PHONY : enum_union/fast
+
+enum_union.o: enum_union.cpp.o
+.PHONY : enum_union.o
+
+# target to build an object file
+enum_union.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enum_union.dir/build.make CMakeFiles/enum_union.dir/enum_union.cpp.o
+.PHONY : enum_union.cpp.o
+
+enum_union.i: enum_union.cpp.i
+.PHONY : enum_union.i
+
+# target to preprocess a source file
+enum_union.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enum_union.dir/build.make CMakeFiles/enum_union.dir/enum_union.cpp.i
+.PHONY : enum_union.cpp.i
+
+enum_union.s: enum_union.cpp.s
+.PHONY : enum_union.s
+
+# target to generate assembly for a file
+enum_union.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enum_union.dir/build.make CMakeFiles/enum_union.dir/enum_union.cpp.s
+.PHONY : enum_union.cpp.s
 
 hello.o: hello.cpp.o
 .PHONY : hello.o
 
 # target to build an object file
 hello.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MayLearning.dir/build.make CMakeFiles/MayLearning.dir/hello.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.o
 .PHONY : hello.cpp.o
 
 hello.i: hello.cpp.i
@@ -142,7 +179,7 @@ hello.i: hello.cpp.i
 
 # target to preprocess a source file
 hello.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MayLearning.dir/build.make CMakeFiles/MayLearning.dir/hello.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.i
 .PHONY : hello.cpp.i
 
 hello.s: hello.cpp.s
@@ -150,7 +187,7 @@ hello.s: hello.cpp.s
 
 # target to generate assembly for a file
 hello.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MayLearning.dir/build.make CMakeFiles/MayLearning.dir/hello.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.s
 .PHONY : hello.cpp.s
 
 # Help Target
@@ -161,7 +198,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MayLearning"
+	@echo "... enum_union"
+	@echo "... hello"
+	@echo "... enum_union.o"
+	@echo "... enum_union.i"
+	@echo "... enum_union.s"
 	@echo "... hello.o"
 	@echo "... hello.i"
 	@echo "... hello.s"

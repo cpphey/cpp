@@ -43,5 +43,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/MayLearning.dir/DependInfo.cmake"
+  "CMakeFiles/hello.dir/DependInfo.cmake"
+  "CMakeFiles/enum_union.dir/DependInfo.cmake"
   )
