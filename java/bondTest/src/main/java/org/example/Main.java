@@ -55,13 +55,21 @@ public class Main {
 
         // Create a dummy rates provider (for simplicity, using today as the valuation date)
         LocalDate valuationDate = LocalDate.now();
-        ImmutableRatesProvider ratesProvider = ImmutableRatesProvider.builder(valuationDate).build();
+        //ImmutableRatesProvider ratesProvider = ImmutableRatesProvider.builder(valuationDate).build();
 
-        // Calculate the modified duration
-        double yield = 0.04; // 4% yield
-        double modifiedDuration = pricer.modifiedDurationFromYield(resolvedBond, valuationDate, yield);
+        // Define the bond price (e.g., 102% of face value)
+        double dirtyPrice = 102.0; // Dirty price in percentage of par value
 
-        // Output the modified duration
+        // Calculate the yield from the given clean price
+        double calculatedYield = pricer.yieldFromDirtyPrice(resolvedBond, valuationDate, dirtyPrice);
+        System.out.println("Calculated Yield: " + calculatedYield);
+
+        // Calculate the modified duration from the calculated yield
+        double modifiedDuration = pricer.modifiedDurationFromYield(resolvedBond, valuationDate, calculatedYield);
         System.out.println("Modified Duration: " + modifiedDuration);
+
+        // Calculate the convexity from the yield
+        double convexity = pricer.convexityFromYield(resolvedBond, valuationDate, calculatedYield);
+        System.out.println("Convexity: " + convexity);
     }
 }
