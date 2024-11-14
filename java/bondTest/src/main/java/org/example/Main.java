@@ -11,6 +11,7 @@ import com.opengamma.strata.pricer.rate.ImmutableRatesProvider;
 import com.opengamma.strata.product.bond.ResolvedFixedCouponBond;
 import com.opengamma.strata.product.bond.FixedCouponBond;
 import com.opengamma.strata.product.bond.FixedCouponBondYieldConvention;
+import com.opengamma.strata.product.LegalEntityId;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class Main {
         LocalDate maturityDate = LocalDate.of(2030, 1, 1);
         double couponRate = 0.05; // 5% coupon
         double notional = 1000000; // 1 million dollars
+        LegalEntityId legalEntityId = LegalEntityId.parse("LE~1234");
 
         // Create a fixed coupon bond
         FixedCouponBond bond = FixedCouponBond.builder()
@@ -42,6 +44,7 @@ public class Main {
                         .build())
                 .settlementDateOffset(com.opengamma.strata.basics.date.DaysAdjustment.ofBusinessDays(2, HolidayCalendarIds.SAT_SUN))
                 .yieldConvention(FixedCouponBondYieldConvention.US_STREET)
+                .legalEntityId(legalEntityId)
                 .build();
 
         // Resolve the bond
